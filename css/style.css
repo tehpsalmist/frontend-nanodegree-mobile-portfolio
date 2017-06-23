@@ -35,7 +35,7 @@ header { width: 100%; padding: 0 0.5em; color: #C90B0B; display: inline-flex;}
 .content { padding: 1em 1em; }
 .content li { list-style-type: none; font-size: 1.1em;}
 .li-img { float:left; padding-right: 1em; }
-li p { font-size: 0.9em; font-style: italic; }
+.li-p { font-size: 0.9em; font-style: italic; }
 
 footer {
   width: 100%;
