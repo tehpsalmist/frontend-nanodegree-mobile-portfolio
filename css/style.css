@@ -5,8 +5,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
 }
-body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; box-sizing: border-box;}
-body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
+body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; box-sizing: border-box; font-family: 'Open Sans', sans-serif; color: #333; }
 
 a { color: #12C; }
 a:visited { color: #61C; }
@@ -32,8 +31,8 @@ header { width: 100%; padding: 0 0.5em; color: #C90B0B; display: inline-flex;}
   border-top: 1px solid #ccc;
 }
 
-.content { padding: 1em 1em; }
-.content li { list-style-type: none; font-size: 1.1em;}
+.content {padding: 1em 1em;}
+li { list-style-type: none; font-size: 1.1em;}
 .li-img { float:left; padding-right: 1em; }
 .li-p { font-size: 0.9em; font-style: italic; }
 
