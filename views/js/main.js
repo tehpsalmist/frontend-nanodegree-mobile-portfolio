@@ -491,19 +491,19 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
     switch(size) {
       case "1":
-        document.querySelectorAll(".randomPizzaContainer").map(elem => {
+        document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
           elem.classList.remove("col-md-4", "col-md-6");
           elem.classList.add("col-md-3");
         });
         return;
       case "2":
-        document.querySelectorAll(".randomPizzaContainer").map(elem => {
+        document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
           elem.classList.remove("col-md-3", "col-md-6");
           elem.classList.add("col-md-4");
         });
         return;
       case "3":
-        document.querySelectorAll(".randomPizzaContainer").map(elem => {
+        document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
           elem.classList.remove("col-md-4", "col-md-3");
           elem.classList.add("col-md-6");
         });
