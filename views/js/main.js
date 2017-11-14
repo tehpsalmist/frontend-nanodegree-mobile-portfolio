@@ -424,20 +424,20 @@ var resizePizzas = function(size) {
     switch(size) {
       case "1":
         document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
-          elem.classList.remove("col-md-4", "col-md-6");
-          elem.classList.add("col-md-3");
+          elem.classList.remove("col-sm-4", "col-sm-6");
+          elem.classList.add("col-sm-3");
         });
         return;
       case "2":
         document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
-          elem.classList.remove("col-md-3", "col-md-6");
-          elem.classList.add("col-md-4");
+          elem.classList.remove("col-sm-3", "col-sm-6");
+          elem.classList.add("col-sm-4");
         });
         return;
       case "3":
         document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
-          elem.classList.remove("col-md-4", "col-md-3");
-          elem.classList.add("col-md-6");
+          elem.classList.remove("col-sm-4", "col-sm-3");
+          elem.classList.add("col-sm-6");
         });
         return;
       default:
