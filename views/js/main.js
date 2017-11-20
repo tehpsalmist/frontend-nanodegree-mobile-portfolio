@@ -372,7 +372,7 @@ var pizzaElementGenerator = function(i) {
   pizzaImage = document.createElement("img");
   pizzaDescriptionContainer = document.createElement("div");
 
-  pizzaContainer.classList.add("randomPizzaContainer", "col-md-4");
+  pizzaContainer.classList.add("randomPizzaContainer", "col-xs-4");
   pizzaContainer.style.height = "325px";
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
   pizzaImageContainer.style.width="35%";
@@ -424,20 +424,20 @@ var resizePizzas = function(size) {
     switch(size) {
       case "1":
         document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
-          elem.classList.remove("col-sm-4", "col-sm-6");
-          elem.classList.add("col-sm-3");
+          elem.classList.remove("col-xs-4", "col-xs-6");
+          elem.classList.add("col-xs-3");
         });
         return;
       case "2":
         document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
-          elem.classList.remove("col-sm-3", "col-sm-6");
-          elem.classList.add("col-sm-4");
+          elem.classList.remove("col-xs-3", "col-xs-6");
+          elem.classList.add("col-xs-4");
         });
         return;
       case "3":
         document.querySelectorAll(".randomPizzaContainer").forEach(elem => {
-          elem.classList.remove("col-sm-4", "col-sm-3");
-          elem.classList.add("col-sm-6");
+          elem.classList.remove("col-xs-4", "col-xs-3");
+          elem.classList.add("col-xs-6");
         });
         return;
       default:
