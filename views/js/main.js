@@ -493,8 +493,8 @@ var updatingBackground = false;
 function tryRAF() {
   if (!updatingBackground) {
     requestAnimationFrame(updatePositions);
+    updatingBackground = true;
   }
-  updatingBackground = true;
 }
 
 function onScroll() {
@@ -503,17 +503,14 @@ function onScroll() {
 }
 
 // moved these variables into global scope so they wouldn't need to be recalculated every time
+var items = document.getElementsByClassName('mover');
 
 // Moves the sliding background pizzas based on scroll position
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
-  var items = document.querySelectorAll('.mover');
   var l = items.length;
-
-  // document.body.scrollTop is no longer supported in Chrome.
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  var scrollTop = lastScroll;
   var phases = [];
   phases.push(Math.sin(scrollTop / 1250));
   phases.push(Math.sin((scrollTop / 1250) + 1));
@@ -522,8 +519,7 @@ function updatePositions() {
   phases.push(Math.sin((scrollTop / 1250) + 4));
 
   for (var i = 0; i < l; i++) {
-    var phase = i % 5;
-    items[i].style.left = items[i].basicLeft + 100 * phases[phase] + 'px';
+    items[i].style.transform = 'translateX(' + 100 * phases[i % 5] + 'px)';
   }
 
   // finished work, ready to do it again
@@ -552,9 +548,9 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.basicLeft = (i % cols) * s;
+    elem.style.left = ((i % cols) * s) + (100 * (i % 5)) + "px";
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    document.getElementById("movingPizzas1").appendChild(elem);
   }
   updatePositions();
 });
