@@ -4,34 +4,18 @@ The purpose of this project was to optimize the critical rendering path and make
 
 Check out the [original repository](https://github.com/udacity/frontend-nanodegree-mobile-portfolio) to compare the code.
 
-### Getting started
+### Check it out
 
-#### Part 1: Optimize PageSpeed Insights score for index.html
+To see the optimized pages in action, download entire directory and open `index.html` in a browser, or (view the page live)[https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/] (hosted on GitHub Pages).
 
-Some useful tips to help you get started:
+### Part 1: Optimize PageSpeed Insights score for index.html
 
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
+The Github Pages rendering of this site scored 92/100 on mobile and 95/100 on desktop with (Google's Pagespeed Insights)[https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftehpsalmist.github.io%2Ffrontend-nanodegree-mobile-portfolio%2F&tab=mobile].
 
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
+I achieved this by
+1. something
 
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
+#### Part 2: Optimize Frames per Second in (pizza.html)[https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html]
 
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ./ngrok http 8080
-  ```
 
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
-
-#### Part 2: Optimize Frames per Second in pizza.html
-
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
-
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
+1. 
