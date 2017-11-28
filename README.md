@@ -6,7 +6,9 @@ Check out the [original repository](https://github.com/udacity/frontend-nanodegr
 
 ### Check it out
 
-To see the optimized pages in action, download entire directory and open `index.html` in a browser, or [view the page live](https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/) (hosted on GitHub Pages).
+To see the optimized pages in action, [download](https://github.com/tehpsalmist/frontend-nanodegree-mobile-portfolio/archive/master.zip) or [clone](x-github-client://openRepo/https://github.com/tehpsalmist/frontend-nanodegree-mobile-portfolio) the directory and open `index.html` in a browser, or [view the page live](https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/) (hosted on GitHub Pages).
+
+`git clone https://github.com/tehpsalmist/frontend-nanodegree-mobile-portfolio.git`
 
 ### Part 1: Optimize PageSpeed Insights score for [index.html](https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/)
 
