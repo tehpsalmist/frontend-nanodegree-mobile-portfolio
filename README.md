@@ -19,8 +19,8 @@ I achieved this by
 1. Inlining a minified version of the styles in the `<head>` using [CSS Minifier](https://cssminifier.com/)
 1. Adding `async` to the google analytics script and `perfmatters.js`
 1. Refactoring the CSS/HTML styles to utilize classes and generic tag styles (eliminated many descendent selectors)
-1. Dispensed of the unnecessary webfonts
-1. Added `media="print"` to `print.css` so it wouldn't be included unnecessarily
+1. Dispensing of the unnecessary webfonts
+1. Adding `media="print"` to `print.css` so it wouldn't be included unnecessarily
 
 ### Part 2: Optimize Frames per Second in [pizza.html](https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html)
 
