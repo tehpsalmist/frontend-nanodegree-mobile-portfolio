@@ -509,7 +509,8 @@ var items = document.getElementsByClassName('mover');
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-  var l = items.length;
+  // measurements all cached outside of loop
+  var l = items.length; 
   var scrollTop = lastScroll;
   var phases = [];
   phases.push(Math.sin(scrollTop / 1250));
