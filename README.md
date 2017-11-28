@@ -32,3 +32,5 @@ The animations on this page (resizing pizzas [`resizePizzas()`] and "on-scrollin
 1. Moved `getElementsByClassName()` out of `updatePositions()` entirely, saving the browser the time to look up each element on every `updatePositions()` call
 1. Cached any measurements and math outside of the `for` loop to make the style assignment the only activity happening on loop within `updatePositions()`
 1. Refactored the style change in `updatePositions()` to use `transform` instead of `left`, which is best explained in [this article](https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
+
+#### #perfmatters
