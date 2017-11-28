@@ -21,10 +21,10 @@ I achieved this by
 1. Refactoring the CSS/HTML styles to utilize classes and generic tag styles (eliminated many descendent selectors)
 1. Dispensed of the unnecessary webfonts
 1. Added `media="print"` to `print.css` so it wouldn't be included unnecessarily
-1. 
 
 ### Part 2: Optimize Frames per Second in [pizza.html](https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html)
 
 The animations on this page (resizing pizzas and "on-scrolling" pizzas in the background) run at a buttery 60 frames per second, thanks to these optimizations in the JavaScript and CSS:
 
-1. 
+1. Optimized the pizza images by transforming them into [base64 data](https://www.base64-image.de/) (holy huge performance boost batman!)
+2. 
