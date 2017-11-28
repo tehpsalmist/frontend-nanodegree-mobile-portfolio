@@ -4,7 +4,7 @@ The purpose of this project was to optimize the critical rendering path and make
 
 Check out the [original repository](https://github.com/udacity/frontend-nanodegree-mobile-portfolio) to compare the code.
 
-### Check it out
+### Part 0: Check it out
 
 To see the optimized pages in action, [download](https://github.com/tehpsalmist/frontend-nanodegree-mobile-portfolio/archive/master.zip) or clone the directory and open `index.html` in your favorite browser, or [view the page live](https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/) (hosted on GitHub Pages).
 
@@ -25,5 +25,6 @@ I achieved this by
 
 ### Part 2: Optimize Frames per Second in [pizza.html](https://tehpsalmist.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html)
 
+The animations on this page (resizing pizzas and "on-scrolling" pizzas in the background) run at a buttery 60 frames per second, thanks to these optimizations in the JavaScript and CSS:
 
 1. 
